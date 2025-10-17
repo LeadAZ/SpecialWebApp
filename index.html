@@ -9,12 +9,22 @@
     </title>
 
     <!--this formats the style for all the elements on this site, so be careful-->
+    <!--dot used for class definitions, to easily replicate types of objects-->
     <!--im specifically using '#idname' to identify specific elements I've labeled-->
+  
     <style> 
 
       div {
         width:auto;
         margin:auto;
+      }
+
+      .undertale {
+        background-color: black;
+        color:white;
+        border: 4px solid white;
+        margin: 20px;
+        padding: 20px;
       }
 
       #stripedTable tbody tr:nth-child(odd) {
@@ -41,7 +51,7 @@
 
   <hr> <!--hr literally uses a line for a break-->
 
-  <body>
+  <body style="background-color: lightslategrey;"> <!--css style formatting, for the whole page-->
 
     <!--think of divs as dividers which separate elements into groups-->
     <div style="background-color: aliceblue;">
@@ -147,6 +157,58 @@
 
     </div>
     
+    <!--custom class I made that I can easily replicate as elements-->
+    <div class="undertale">
+      <img 
+        src="https://i.redd.it/a75wpcwqqk481.png" alt="sans dialog 1"
+        style="float: left; size: 25px 25px;">
+
+      <pre style="font-family: sans-serif;">
+        * yo.
+        * i'm sans undertale, although you might not believe me.
+      </pre>
+    </div>
+
+    <div class="undertale">
+      <img 
+        src="https://i.redd.it/a75wpcwqqk481.png" alt="sans dialog 2"
+        style="float: left; size: 25px 25px;">
+
+      <pre style="font-family: sans-serif;">
+        * not sure what a 'leadaz' is, sounds edgy i guess.
+      </pre>
+    </div>
+
+    <div class="undertale">
+      <img 
+        src="https://static.wikia.nocookie.net/undertale/images/1/1a/Papyrus_face.png/revision/latest?cb=20240202133414" alt="papyrus dialog"
+        style="float: left; size: 25px 25px;">
+
+      <pre style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        * SANS, WHY ARE YOU TALKING TO A ROCK? YOU'RE SUPPOSED TO BE HELPING WITH THE COSTUMES.
+      </pre>
+    </div>
+
+    <div class="undertale">
+      <img 
+        src="https://i.redd.it/a75wpcwqqk481.png" alt="sans dialog 3"
+        style="float: left; size: 25px 25px;">
+
+      <pre style="font-family: sans-serif;">
+        * right, spooky season is coming up. aren't we already in our best costumes?
+        * we farm a skele-ton of aura as-is. heh.
+      </pre>
+    </div>
+
+    <div class="undertale">
+      <img 
+        src="https://static.wikia.nocookie.net/undertale/images/1/1a/Papyrus_face.png/revision/latest?cb=20240202133414" alt="papyrus dialog"
+        style="float: left; size: 25px 25px;">
+
+      <pre style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        * WHATEVER SANS. JUST GET OVER HERE.
+      </pre>
+    </div>
 
   </body>
 
