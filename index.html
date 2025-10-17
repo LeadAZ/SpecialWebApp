@@ -11,13 +11,19 @@
     <!--this formats the style for all the elements on this site, so be careful-->
     <!--im specifically using '#idname' to identify specific elements I've labeled-->
     <style> 
+
+      div {
+        width:fit-content;
+        margin:auto
+      }
+
       #stripedTable tbody tr:nth-child(odd) {
-        background-color: gray;
+        background-color: lightgray;
       }
       #stripedTable tbody tr:nth-child(even) {
         background-color: white;
       }
-
+      
     </style>
 
     <!--this gives us a favicon icon for the website tab-->
@@ -35,100 +41,113 @@
 
   <hr> <!--hr literally uses a line for a break-->
 
-  <body style="background-color: rgb(161, 166, 170);"> <!--style colors-->
+  <body> <!--style colors-->
 
-    <p> <!--paragraph element-->
-      thing that is a thing but we need another thing <br> and that 'br' thing is a line break
-    </p>
-    
-    <a href="https://school.leadaz.org/"> <!--link with text element-->
-      This is the text for a link which takes you to the school website yipee
-    </a>
+    <!--think of divs as dividers which separate elements into groups-->
+    <div style="background-color: aqua;">
 
-    <!--image element-->
-    <img 
-      src="https://school.leadaz.org/wp-content/uploads/2022/12/logo1-blue-resized.png" 
-      alt="The LeadAZ Private School Logo"
-      width="670" height="360"
-      title="the 'alt' attribute only displays if the image fails to load. the 'title' attribute text is shown when hovering over the image. it could be said that this is a tooltip"
-    > 
+      <p> <!--paragraph element-->
+        thing that is a thing but we need another thing <br> and that 'br' thing is a line break
+      </p>
+      
+      <a href="https://school.leadaz.org/"> <!--link with text element-->
+        This is the text for a link which takes you to the school website yipee
+      </a>
 
-    <p>
-      note that it is better to use relative src urls, not absolute urls hosted on another website.
-    </p>
-
-    <!--testing out headings w/ different styles-->
-    <h1 style="font-size: 60px; font:bolder"> echo 1 </h1>
-    <h2 style="font-size: 50px; font-family: 'Courier New', Courier, monospace;"> echo 2 </h2>
-    <h3 style="font-size: 40px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> echo 3 </h3>
-    <h4 style="font-size: 30px; font: italic;"> echo 4 </h4>
-    <h5 style="font-size: 20px; font-family: fantasy;"> echo 5 </h5>
-    <h6 style="font-size: 10px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> echo 6 </h6>
-
-    <pre style="color: aliceblue; background-color: black;">
-      this paragraph is actually 'pre', which means                      o.o
-      that if I make a new
-      line or         include spaces then it should just read as is probably
-    </pre>
-
-    <p style="color: #ff0000; background-color: rgb(146, 74, 74); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
-      <sub> when </sub> is the <b>amongus</b> update!?!?
-    </p>
-
-    <a style="background-color: black; color: white; padding: 15px 25px; text-align: center; display: inline-block;"
-    href="https://www.w3schools.com/html/html_links_colors.asp">
-      What the sigma link button
-    </a>
-
-    <p>
+      <!--image element-->
       <img 
-      src="https://media1.tenor.com/m/myBSeWiQds0AAAAd/deep-the-boys.gif" alt="the deep"
-      style="float: left; size: 50px 50px;">
-      Here, you may see a specimen of the fishe variety.
-      At 10:44am on 10/17/2025, 'the uhh update 2 electric boogaloo' update accidentally turned the whole website into this gif. woops.
-    </p>
+        src="https://school.leadaz.org/wp-content/uploads/2022/12/logo1-blue-resized.png" 
+        alt="The LeadAZ Private School Logo"
+        width="670" height="360"
+        title="the 'alt' attribute only displays if the image fails to load. the 'title' attribute text is shown when hovering over the image. it could be said that this is a tooltip"
+      > 
+
+      <p>
+        note that it is better to use relative src urls, not absolute urls hosted on another website.
+      </p>
+
+    </div>
+
+    <div style="background-color: rgb(0, 149, 255);">
+
+      <!--testing out headings w/ different styles-->
+      <h1 style="font-size: 60px; font:bolder"> echo 1 </h1>
+      <h2 style="font-size: 50px; font-family: 'Courier New', Courier, monospace;"> echo 2 </h2>
+      <h3 style="font-size: 40px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> echo 3 </h3>
+      <h4 style="font-size: 30px; font: italic;"> echo 4 </h4>
+      <h5 style="font-size: 20px; font-family: fantasy;"> echo 5 </h5>
+      <h6 style="font-size: 10px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> echo 6 </h6>
+
+      <pre style="color: aliceblue; background-color: black;">
+        this paragraph is actually 'pre', which means                      o.o
+        that if I make a new
+        line or         include spaces then it should just read as is probably
+      </pre>
+
+      <p style="color: #ff0000; background-color: rgb(146, 74, 74); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+        <sub> when </sub> is the <b>amongus</b> update!?!?
+      </p>
+
+      <a style="background-color: black; color: white; padding: 15px 25px; text-align: center; display: inline-block;"
+      href="https://www.w3schools.com/html/html_links_colors.asp">
+        What the sigma link button
+      </a>
+
+      <p>
+        <img 
+        src="https://media1.tenor.com/m/myBSeWiQds0AAAAd/deep-the-boys.gif" alt="the deep"
+        style="float: left; size: 50px 50px;">
+        Here, you may see a specimen of the fishe variety.
+        At 10:44am on 10/17/2025, 'the uhh update 2 electric boogaloo' update accidentally turned the whole website into this gif. woops.
+      </p>
+
+    </div>
 
     <br> <hr>
 
-    <!--the table structure, made of rows, made of headers and cells. see <style> at the top for the style.-->
-    <table 
-      id="stripedTable" 
-      style="border: 1px solid black; border-collapse: collapse;"
-    >
+    <div style="background-color: rgb(0, 76, 255);">
 
-      <caption>Top 5 reasons why I need to make this website</caption>
+      <!--the table structure, made of rows, made of headers and cells. see <style> at the top for the style.-->
+      <table 
+        id="stripedTable" 
+        style="border: 1px solid black; border-collapse: collapse;"
+      >
 
-      <tr> <!--row 1, in bold because th is table header-->
-        <th>Number</th>
-        <th>Reason</th>
-      </tr>
+        <caption>Top 5 reasons why I need to make this website</caption>
 
-      <tr> <!--row 2, in normie text because td is normal table cell-->
-        <td>One</td>
-        <td>because I wanted to lol</td>
-      </tr>
+        <tr> <!--row 1, in bold because th is table header-->
+          <th>Number</th>
+          <th>Reason</th>
+        </tr>
 
-      <tr>
-        <td>Two</td>
-        <td>my friends wanted to get into website making anyways</td>
-      </tr>
+        <tr> <!--row 2, in normie text because td is normal table cell-->
+          <td>One</td>
+          <td>because I wanted to lol</td>
+        </tr>
 
-      <tr>
-        <td>Three</td>
-        <td>there's a fella I can help out by knowing how to help and they are very cool, thanks for getting me set up btw</td>
-      </tr>
+        <tr>
+          <td>Two</td>
+          <td>my friends wanted to get into website making anyways</td>
+        </tr>
 
-      <tr>
-        <td>Four</td>
-        <td>in the future I might have to make one anyways so it helps to have experience</td>
-      </tr>
+        <tr>
+          <td>Three</td>
+          <td>there's a fella I can help out by knowing how to help and they are very cool, thanks for getting me set up btw</td>
+        </tr>
 
-      <tr>
-        <td>Five</td>
-        <td>we are pro grammers </td>
-      </tr>
+        <tr>
+          <td>Four</td>
+          <td>in the future I might have to make one anyways so it helps to have experience</td>
+        </tr>
 
-    </table>
+        <tr>
+          <td>Five</td>
+          <td>we are pro grammers </td>
+        </tr>
+
+      </table>
+
+    </div>
     
 
   </body>
