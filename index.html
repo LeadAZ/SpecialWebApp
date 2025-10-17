@@ -8,6 +8,18 @@
     SpecialWebApp
     </title>
 
+    <!--this formats the style for all the elements on this site, so be careful-->
+    <!--im specifically using '#idname' to identify specific elements I've labeled-->
+    <style> 
+      #stripedTable tbody tr:nth-child(odd) {
+        background-color: gray;
+      }
+      #stripedTable tbody tr:nth-child(even) {
+        background-color: white;
+      }
+
+    </style>
+
     <!--this gives us a favicon icon for the website tab-->
     <link 
     rel="icon" 
@@ -78,11 +90,13 @@
 
     <br> <hr>
 
-    <p>
-      Top 5 reasons why I need to make this website
-    </p>
+    <!--the table structure, made of rows, made of headers and cells. see <style> at the top for the style.-->
+    <table 
+      id="stripedTable" 
+      style="border: 1px solid black; border-collapse: collapse;"
+    >
 
-    <table> <!--the table structure, made of rows, made of headers and cells-->
+      <caption>Top 5 reasons why I need to make this website</caption>
 
       <tr> <!--row 1, in bold because th is table header-->
         <th>Number</th>
