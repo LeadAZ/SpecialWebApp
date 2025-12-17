@@ -1,5 +1,4 @@
-// ;) //
-console.log("this malformed baby is a faliure")
+
 
 // SETUP //
 
