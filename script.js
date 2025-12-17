@@ -1,4 +1,9 @@
 
+// ;) //
+console.log("this malformed baby is a faliure");
+console.log("so yeah");
+console.log("none of this stuff makes sense at all");
+console.log("help");
 
 // SETUP //
 
