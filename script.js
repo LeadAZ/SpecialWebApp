@@ -36,18 +36,18 @@ function addCivPoints() {
     const inputValue_amount = inputText_amount.value;
     const inputValue_userID = inputText_userID.value;
     
-    if (Number(inputValue_amount) == NaN) {
+    if (Number.isNaN(Number(inputValue_amount))) {
         outputText.textContent = "Message: Please input a valid amount."; console.log("failure")
         return;
     }
 
-    if (Number(inputValue_userID) == NaN) {
+    if (Number.isNaN(Number(inputValue_userID))) {
         outputText.textContent = "Message: Please input a valid user ID."; console.log("failure")
         return;
     }
 
     // whatever request you do to add civ points after
-    outputText.textContent = "Message: You have added " + inputValue_amount + " to user " + inputText_userID + "."; console.log("success")
+    outputText.textContent = "Message: You have added " + inputValue_amount + " to user " + inputValue_userID + "."; console.log("success")
 
 }
 
