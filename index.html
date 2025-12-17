@@ -286,30 +286,42 @@
 
       <!-- button, createStudent -->
       <button type="button" id="createstudentbutton">Create Student</button>
-      <input type="text" id="createstudenttext" name="createstudenttext">
+      <input type="text" id="createstudenttext">
       <p id="createstudentoutputtext">Message: </p>
-      <script src="script.js" defer></script>
       
       <br>
 
       <button type="button">Remove Student</button>
-      <input type="text" id="removestudent" name="removestudent">
+      <input type="text" id="removestudent">
       <br>
       <button type="button">Set Civ Count</button>
-      <input type="text" id="setcivcount" name="setcivcount">
+      <input type="text" id="setcivcount">
       <br>
-      <button type="button">Add Civ Points</button>
-      <input type="text" id="addcivpoints" name="addcivpoints">
+
+      <!--button, addCivPoints-->
+
+      <p>CIV Point Amount: </p>
+      <input type="text" id="addcivpointstext_amount">
+      <p>ID of person to Add CIV Points to: </p>
+      <input type="text" id="addcivpointstext_student">
+
+      <button type="button" id="addcivpointsbutton">Add Civ Points</button>
+
+      <p id="addcivpointsoutputtext">Message: </p>
+
       <br>
       <button type="button">Deduct Civ Points</button>
-      <input type="text" id="deductcivpoints" name="deductcivpoints">
+      <input type="text" id="deductcivpoints">
       <br>
       <button type="button">Transfer Civ Points</button>
       <br>
       <button type="button">Get All Students</button>
       <br>
       <button type="button">Get Specific Student</button>
-      <input type="text" id="getspecificstudent" name="getspecificstudent">
+      <input type="text" id="getspecificstudent">
+
+      <!--reference to the script that connects the buttons-->
+      <script src="script.js" defer></script>
 
     </div>
 
