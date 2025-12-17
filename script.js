@@ -14,9 +14,9 @@ function createStudent() {
     const outputText = document.getElementById('createstudentoutputtext');
 
     if (inputText.trim() != "") {
-        outputText.textContent = 'You have added student ' + inputText + '.';
+        outputText.textContent = 'Message: You have added student ' + inputText + '.';
     } else {
-        outputText.textContent = 'Please enter a name.';
+        outputText.textContent = 'Message: Please enter a name.';
     }
     
 }
