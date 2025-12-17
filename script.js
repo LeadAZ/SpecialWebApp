@@ -38,7 +38,7 @@ function addCivPoints() {
         return;
     }
 
-    if (Number(inputText_userID) == NaN) {
+    if (Number(inputValue_userID) == NaN) {
         outputText.textContent = "Message: Please input a valid user ID.";
     }
 
