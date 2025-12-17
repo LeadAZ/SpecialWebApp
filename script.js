@@ -41,12 +41,12 @@ function addCivPoints() {
     const inputValue_amount = inputText_amount.value;
     const inputValue_userID = inputText_userID.value;
     
-    if (Number.isNaN(Number(inputValue_amount))) {
+    if (Number.isNaN(Number(inputValue_amount)) || inputValue_amount == "") {
         outputText.textContent = "Message: Please input a valid amount."; console.log("failure")
         return;
     }
 
-    if (Number.isNaN(Number(inputValue_userID))) {
+    if (Number.isNaN(Number(inputValue_userID)) || inputValue_userID == "") {
         outputText.textContent = "Message: Please input a valid user ID."; console.log("failure")
         return;
     }
