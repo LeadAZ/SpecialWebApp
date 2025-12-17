@@ -1,6 +1,7 @@
 // SETUP //
 
 const createstudentbutton = document.getElementById('createstudentbutton')
+const addcivpointsbutton = document.getElementById('addcivpointsbutton')
 
 // FUNCTIONS //
 
@@ -51,3 +52,4 @@ function addCivPoints() {
 // RUNTIME //
 
 createstudentbutton.addEventListener('click', createStudent);
+addcivpointsbutton.addEventListener('click', addCivPoints);
