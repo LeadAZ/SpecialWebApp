@@ -74,6 +74,7 @@ function addCivPoints() {
             //you can edit that later if you want
             reason: "this will NOT be a malformed baby hopefully" //You can change this to anything.
         })
+        credentials: 'include'
     })
     //final real succeed line
     //I just realized we don't really have any way to say that it failed from the backend...
