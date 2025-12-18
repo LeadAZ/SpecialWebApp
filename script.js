@@ -74,7 +74,7 @@ function addCivPoints() {
             //we forgot to add the reason so i just made it non-adjustable for now
             //you can edit that later if you want
             reason: "this will NOT be a malformed baby hopefully" //You can change this to anything.
-        })
+        }),
         credentials: 'include'
     })
     //final real succeed line
