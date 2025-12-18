@@ -54,7 +54,7 @@ function addCivPoints() {
     //yknow i just realized we should move this to the bottom maybe because it hasn't actually succeeded yet. i'll comment it out for now and move it.
     //outputText.textContent = "Message: You have added " + inputValue_amount + " to user " + inputValue_userID + "."; console.log("success")
     // "fetching" the information to the backend
-    fetch('', {
+    fetch('https://leadazcivpoints.com/cp/add', {
         //you problably know what these mean
         method: 'POST',
         //there are like around 4 HTTP official requests, like POST, PUT, GET, and DELETE. I'll make a more detailed guide in the README.
