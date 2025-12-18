@@ -60,7 +60,8 @@ function addCivPoints() {
         method: 'POST',
         //there are like around 4 HTTP official requests, like POST, PUT, GET, and DELETE. I'll make a more detailed guide in the README.
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Authorization': 'Basic ' + btoa("STAFF" + ':' + "mgr")//so it didnt work because i forgot i added server-side authentication earlier this month so don't let anyone see this repository as i am storing credentials in plaintext 🤫 (never do this btw in real cases)
         },
         //I never really dug into why this content-type is like this but it's always required
         body: JSON.stringify({
