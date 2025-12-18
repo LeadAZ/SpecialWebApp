@@ -48,8 +48,7 @@ function addCivPoints() {
         outputText.textContent = "Message: Please input a valid user ID."; console.log("failure")
         return;
     }
-// This below is just broken. I have no idea what to do right now so I'm going to take a break for the night.
-//Really a TODO: Fix. moment
+//FINALLY FIXED!!!
     // whatever request you do to add civ points after
     //got it
     //yknow i just realized we should move this to the bottom maybe because it hasn't actually succeeded yet. i'll comment it out for now and move it.
@@ -73,7 +72,7 @@ function addCivPoints() {
             points: Number(inputValue_amount),
             //we forgot to add the reason so i just made it non-adjustable for now
             //you can edit that later if you want
-            reason: "this will NOT be a malformed baby hopefully" //You can change this to anything.
+            reason: "this will NOT be a malformed baby hopefully" //You can change this
         })
     })
     //final real succeed line
@@ -81,7 +80,7 @@ function addCivPoints() {
     //fine for now
     //You can add that if you really want to
     //I know we shouldn't go without error handling but this is just a project.
-    //If I really need to and this fails I will add it and take what the backend HTTP code was.
+    //edit- i was able to fix this without error handling. I just had to check the Network tab in devtools. So not really an issue.
     outputText.textContent = "Message: You have added " + inputValue_amount + " to user " + inputValue_userID + "."; console.log("success yay")
 }
 
