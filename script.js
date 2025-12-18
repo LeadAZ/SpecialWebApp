@@ -48,7 +48,8 @@ function addCivPoints() {
         outputText.textContent = "Message: Please input a valid user ID."; console.log("failure")
         return;
     }
-
+// This below is just broken. I have no idea what to do right now so I'm going to take a break for the night.
+//Really a TODO: Fix. moment
     // whatever request you do to add civ points after
     //got it
     //yknow i just realized we should move this to the bottom maybe because it hasn't actually succeeded yet. i'll comment it out for now and move it.
