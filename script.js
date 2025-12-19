@@ -3,6 +3,14 @@
 console.log("this malformed baby NOT is a faliure, gg");
 console.log("gg indeed.");
 
+/* Logan Dev notes 12/18:
+THING FOR LOGAN TO DO:
+- I put the id of a student, it makes a list of how many civs they have, and I can convert those civ points into USD amount.
+aka, a faux database that is displayed visually on the table, 
+- attempt to use google pie charts to display the total civ points and who has each % of total share
+- https://leadaz.github.io/SpecialWebApp/
+*/
+
 // SETUP //
 
 const createstudentbutton = document.getElementById('createstudentbutton')
@@ -48,6 +56,36 @@ function addCivPoints() {
         outputText.textContent = "Message: Please input a valid user ID."; console.log("failure")
         return;
     }
+
+    fetch('https://leadazcivpoints.com/cp/add', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Basic ' + btoa("STAFF" + ':' + "mgr")
+        },
+        body: JSON.stringify({
+            id: Number(inputValue_userID),
+            points: Number(inputValue_amount),
+            reason: "this will NOT be a malformed baby hopefully"
+        })
+    })
+
+    // DEV NOTE: we do not currently know how to check if the fetch request actually succeeded or not.
+
+    outputText.textContent = "Message: You have added " + inputValue_amount + " to user " + inputValue_userID + "."; console.log("success yay")
+
+}
+
+// RUNTIME //
+
+createstudentbutton.addEventListener('click', createStudent);
+addcivpointsbutton.addEventListener('click', addCivPoints);
+
+
+
+
+/* Jackson dev notes 12/17
+
 //FINALLY FIXED!!!
     // whatever request you do to add civ points after
     //got it
@@ -82,9 +120,5 @@ function addCivPoints() {
     //I know we shouldn't go without error handling but this is just a project.
     //edit- i was able to fix this without error handling. I just had to check the Network tab in devtools. So not really an issue.
     outputText.textContent = "Message: You have added " + inputValue_amount + " to user " + inputValue_userID + "."; console.log("success yay")
-}
 
-// RUNTIME //
-
-createstudentbutton.addEventListener('click', createStudent);
-addcivpointsbutton.addEventListener('click', addCivPoints);
+*/
