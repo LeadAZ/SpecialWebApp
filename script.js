@@ -3,12 +3,13 @@
 console.log("this malformed baby NOT is a faliure, gg");
 console.log("gg indeed.");
 
-/* Logan Dev notes 12/18:
+/* Mel Dev notes 12/18:
 THING FOR LOGAN TO DO:
 - I put the id of a student, it makes a list of how many civs they have, and I can convert those civ points into USD amount.
 aka, a faux database that is displayed visually on the table, 
 - attempt to use google pie charts to display the total civ points and who has each % of total share
 - https://leadaz.github.io/SpecialWebApp/
+
 */
 
 // SETUP //
@@ -84,7 +85,7 @@ addcivpointsbutton.addEventListener('click', addCivPoints);
 
 
 
-/* Jackson dev notes 12/17
+/* BrokenLH dev notes 12/17
 
 //FINALLY FIXED!!!
     // whatever request you do to add civ points after
